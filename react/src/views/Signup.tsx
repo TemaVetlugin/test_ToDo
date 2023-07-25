@@ -42,19 +42,19 @@ export default function Signup() {
             <form className="form form-control" onSubmit={onSubmit}>
                 <div className="form-group m-3">
                     <label htmlFor="name">Никнейм:</label>
-                    <input ref={nameRef} type="text" className="form-control" name="name" id="name"></input>
+                    <input required ref={nameRef} type="text" className="form-control" name="name" id="name"></input>
                 </div>
                 <div className="form-group m-3">
                     <label htmlFor="email">Email:</label>
-                    <input ref={emailRef} type="email" className="form-control" name="email" id="email"></input>
+                    <input required ref={emailRef} type="email" className="form-control" name="email" id="email"></input>
                 </div>
                 <div className="form-group m-3">
                     <label htmlFor="password">Пароль:</label>
-                    <input ref={passwordRef} type="password" className="form-control" name="password" id="password"></input>
+                    <input required ref={passwordRef} type="password" className="form-control" name="password" id="password"></input>
                 </div>
                 <div className="form-group m-3">
                     <label htmlFor="password_confirmation">Повторите пароль:</label>
-                    <input ref={passwordConfirmationRef} type="password" className="form-control" name="password_confirmation"
+                    <input required ref={passwordConfirmationRef} type="password" className="form-control" name="password_confirmation"
                            id="password_confirmation"></input>
                 </div>
                 <button className="btn btn-success m-3" type={"submit"} id="registration-btn">Зарегистрироваться</button>

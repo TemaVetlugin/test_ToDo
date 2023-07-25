@@ -33,11 +33,11 @@ export default function Login() {
         <form className="form form-control" onSubmit={onSubmit}>
             <div className="form-group m-3">
                 <label htmlFor="email">Email:</label>
-                <input ref={emailRef} type="email" className="form-control" name="email" id="email"></input>
+                <input required ref={emailRef} type="email" className="form-control" name="email" id="email"></input>
             </div>
             <div className="form-group m-3">
                 <label htmlFor="password">Пароль:</label>
-                <input ref={passwordRef} type="password" className="form-control" name="password" id="password"></input>
+                <input required ref={passwordRef} type="password" className="form-control" name="password" id="password"></input>
             </div>
             <button className="btn btn-success m-3" type="submit">Войти</button>
         </form>
